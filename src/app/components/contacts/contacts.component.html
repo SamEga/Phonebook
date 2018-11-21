@@ -1,0 +1,16 @@
+<h1 class="header">Phonebook</h1>
+<app-input></app-input>
+<button class="btn" (click)="sortContacts()">Sorting by name</button>
+<div class="contacts">
+  <div
+    class="contact"
+    *ngFor="let contact of contacts"
+    routerLink="/detail/{{contact.id}}"
+  >
+    <img [src]="contact.avatar" alt="" />
+    <div class="contact-wrapper">
+      <p>Name: {{ contact.name }}</p>
+      <p>Phone: {{ contact.phone }}</p>
+    </div>
+  </div>
+</div>

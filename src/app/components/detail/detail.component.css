@@ -1,0 +1,32 @@
+.detail {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.detail img {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 1rem 1rem 0;
+}
+.detail-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.detail-contacts input {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.btn button {
+  margin: 1rem 0;
+  height: 2rem;
+  width: 10rem;
+  border: none;
+  background-color: #e3e3e3;
+  color: rgba(0, 0, 0, 0, 7);
+  border-radius: 5px;
+}
+.btn-back {
+  display: flex;
+  justify-content: center;
+}

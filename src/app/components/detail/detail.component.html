@@ -1,0 +1,28 @@
+<div class="detail">
+  <img [src]="user.avatar" [alt]="user.name" />
+  <div class="detail-contacts">
+    <div>
+      <label>Name: <input [(ngModel)]="user.name" placeholder="name" /> </label>
+    </div>
+    <div>
+      <label
+        >Phone: <input [(ngModel)]="user.phone" placeholder="phone" />
+      </label>
+    </div>
+    <div>
+      <label
+        >Email: <input [(ngModel)]="user.email" placeholder="email" />
+      </label>
+    </div>
+    <div>
+      <label
+        >Username: <input [(ngModel)]="user.username" placeholder="username" />
+      </label>
+    </div>
+
+    <p>Website: {{ user.website }}</p>
+    <div>Company-name:{{ user.company.name }}</div>
+    <div class="btn"><button (click)="saveChange()">Save</button></div>
+  </div>
+</div>
+<div class="btn btn-back"><button (click)="goBack()">Back</button></div>
